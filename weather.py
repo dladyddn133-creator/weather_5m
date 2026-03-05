@@ -16,7 +16,7 @@ url += "&units=metric"
 # get방식으로 요청할 때, request 라이브러리 사용
 response = requests.get(url)
 
-result
+result = response.json()
 main = result["weather"][0]["main"]
 
 temp = result["main"]["temp"]
